@@ -30,7 +30,7 @@ bsp-layout set tiled 9
 
 redshift -l 59.56639:15.87218 &
 
-feh --no-fehbg --bg-fill --randomize "$HOME/Pictures/Wallpapers/*"
+feh --bg-fill --randomize ~/Pictures/Wallpapers/*
 xdg-user-dirs-update
 
 pgrep pipewire || pipewire &
