@@ -1,0 +1,130 @@
+   0.00 MiB	artix-archlinux-support	Add arch linux repo support
+   0.00 MiB	base                	Minimal package set to define a basic Artix Linux installation
+   0.00 MiB	elogind-runit       	runit service scripts for elogind
+   0.00 MiB	iwd-runit           	Runit service script for iwd
+   0.00 MiB	transmission-runit  	runit service scripts for transmission
+   0.02 MiB	slock               	A simple screen locker for X
+   0.02 MiB	xorg-sessreg        	Register X sessions in system utmp/utmpx databases
+   0.02 MiB	xorg-xcursorgen     	Create an X cursor file from PNG images
+   0.02 MiB	xorg-xhost          	Server access control program for X
+   0.02 MiB	xorg-xkill          	Kill a client by its X resource
+   0.02 MiB	xorg-xsetroot       	Classic X utility to set your root window background to a given pattern or color
+   0.03 MiB	expac               	alpm data (pacman database) extraction utility
+   0.03 MiB	xclip               	Command line interface to the X11 clipboard
+   0.03 MiB	xf86-video-vesa     	X.org vesa video driver
+   0.03 MiB	xorg-setxkbmap      	Set the keyboard using the X Keyboard Extension
+   0.03 MiB	xorg-xev            	Print contents of X events
+   0.03 MiB	xorg-xinit          	X.Org initialisation program
+   0.04 MiB	xorg-bdftopcf       	Convert X font from Bitmap Distribution Format to Portable Compiled Format
+   0.04 MiB	xorg-iceauth        	ICE authority file utility
+   0.04 MiB	xorg-xdpyinfo       	Display information utility for X
+   0.04 MiB	xorg-xrdb           	X server resource database utility
+   0.04 MiB	xorg-xset           	User preference utility for X
+   0.05 MiB	dmenu               	Generic menu for X
+   0.05 MiB	tldr                	Command line client for tldr, a collection of simplified and community-driven man pages.
+   0.05 MiB	xorg-mkfontscale    	Create an index of scalable font files for X
+   0.05 MiB	xorg-xauth          	X.Org authorization settings program
+   0.05 MiB	xorg-xmodmap        	Utility for modifying keymaps and button mappings
+   0.05 MiB	xorg-xprop          	Property displayer for X
+   0.06 MiB	openresolv          	resolv.conf management framework (resolvconf)
+   0.06 MiB	xorg-xinput         	Small commandline tool to configure devices
+   0.07 MiB	xorg-xrandr         	Primitive command line interface to RandR extension
+   0.08 MiB	efibootmgr          	Linux user-space application to modify the EFI Boot Manager
+   0.08 MiB	sxiv                	Simple X Image Viewer
+   0.08 MiB	tree                	A directory listing program displaying a depth indented list of files
+   0.10 MiB	pulsemixer          	CLI and curses mixer for pulseaudio
+   0.11 MiB	pacman-contrib      	Contributed scripts and tools for pacman systems
+   0.12 MiB	mpc                 	Minimalist command line interface to MPD
+   0.12 MiB	xorg-server-common  	Xorg server common files
+   0.14 MiB	sxhkd               	Simple X hotkey daemon
+   0.14 MiB	xdg-user-dirs       	Manage user directories like ~/Desktop and ~/Music
+   0.17 MiB	xf86-video-amdgpu   	X.org amdgpu video driver
+   0.18 MiB	bc                  	An arbitrary precision calculator language
+   0.18 MiB	fcitx5-m17n         	m17n Wrapper for Fcitx5
+   0.18 MiB	xdotool             	Command-line X11 automation tool
+   0.22 MiB	xorg-xkbcomp        	X Keyboard description compiler
+   0.23 MiB	xorg-font-util      	X.Org font utilities
+   0.24 MiB	dunst               	Customizable and lightweight notification-daemon
+   0.24 MiB	trash-cli           	Command line trashcan (recycle bin) interface
+   0.25 MiB	pamixer             	Pulseaudio command-line mixer like amixer
+   0.26 MiB	bspwm               	Tiling window manager based on binary space partitioning
+   0.30 MiB	fcitx5-gtk          	Fcitx5 gtk im module and glib based dbus client library
+   0.30 MiB	unzip               	For extracting and viewing files in .zip archives
+   0.31 MiB	libnotify           	Library for sending desktop notifications
+   0.32 MiB	ffmpegthumbnailer   	Lightweight video thumbnailer that can be used by file managers
+   0.33 MiB	maim                	Utility to take a screenshot using imlib2
+   0.33 MiB	neofetch            	A CLI system information tool written in BASH that supports displaying images.
+   0.33 MiB	ueberzug            	Command line util which allows to display images in combination with X11
+   0.39 MiB	lxappearance        	Feature-rich GTK+ theme switcher of the LXDE Desktop
+   0.41 MiB	picom               	X compositor that may fix tearing issues
+   0.43 MiB	feh                 	Fast and light imlib2-based image viewer
+   0.45 MiB	fuse2               	A library that makes it possible to implement a filesystem in a userspace program.
+   0.45 MiB	jgmenu              	Simple, independent, contemporary-looking X11 menu, designed for scripting, ricing and tweaking
+   0.49 MiB	pipewire-pulse      	Low-latency audio/video router and processor - PulseAudio replacement
+   0.51 MiB	rofi-emoji          	A Rofi plugin for selecting emojis
+   0.60 MiB	zathura             	Minimalistic document viewer
+   0.61 MiB	xorg-fonts-encodings	X.org font encoding files
+   0.79 MiB	inotify-tools       	inotify-tools is a C library and a set of command-line programs for Linux providing a simple interface to inotify.
+   0.82 MiB	tumbler             	D-Bus service for applications to request thumbnails
+   0.83 MiB	exa                 	ls replacement
+   0.83 MiB	redshift            	Adjusts the color temperature of your screen according to your surroundings.
+   0.89 MiB	gnome-icon-theme-extras	Extra GNOME icons for specific devices and file types
+   0.98 MiB	rofi                	A window switcher, application launcher and dmenu replacement
+   1.05 MiB	tmux                	A terminal multiplexer
+   1.20 MiB	xorg-server-devel   	Development files for the X.Org X server
+   1.36 MiB	pcmanfm             	Extremely fast and lightweight file manager
+   1.41 MiB	xorg-server-xnest   	A nested X server that runs as an X application
+   1.43 MiB	fcitx5-configtool   	Configuration Tool for Fcitx5
+   1.77 MiB	runit               	a cross-platform Unix init scheme with service supervision
+   1.88 MiB	iwd                 	Internet Wireless Daemon
+   1.91 MiB	xorg-server-xvfb    	Virtual framebuffer X server
+   2.15 MiB	wireplumber         	Session / policy manager implementation for PipeWire
+   2.21 MiB	xorg-xwayland       	run X clients under wayland
+   2.27 MiB	xorg-server-xephyr  	A nested X server that runs as an X application
+   2.28 MiB	man-db              	A utility for reading man pages
+   2.63 MiB	ncmpcpp             	Almost exact clone of ncmpc with some new features
+   2.77 MiB	mpd                 	Flexible, powerful, server-side application for playing music
+   2.79 MiB	transmission-qt     	Fast, easy, and free BitTorrent client (Qt GUI)
+   2.84 MiB	poppler-glib        	Poppler glib bindings
+   3.01 MiB	fd                  	Simple, fast and user-friendly alternative to find
+   3.04 MiB	wget                	Network utility to retrieve files from the Web
+   3.25 MiB	polybar             	A fast and easy-to-use status bar
+   3.59 MiB	gnome-keyring       	Stores passwords and encryption keys
+   3.74 MiB	xorg-server         	Xorg X server
+   3.96 MiB	transmission-cli    	Fast, easy, and free BitTorrent client (CLI tools, daemon and web client)
+   4.16 MiB	ttf-liberation      	Font family which aims at metric compatibility with Arial, Times New Roman, and Courier New
+   4.38 MiB	ripgrep             	A search tool that combines the usability of ag with the raw speed of grep
+   4.44 MiB	gnome-themes-extra  	Extra Themes for GNOME Applications
+   4.48 MiB	bat                 	Cat clone with syntax highlighting and git integration
+   4.65 MiB	vim                 	Vi Improved, a highly configurable, improved version of the vi text editor
+   5.16 MiB	mpv                 	a free, open source, and cross-platform media player
+   5.16 MiB	ttf-roboto          	Google's signature family of fonts
+   5.43 MiB	ttf-jetbrains-mono  	Typeface for developers, by JetBrains
+   5.63 MiB	alacritty           	A cross-platform, GPU-accelerated terminal emulator
+   6.08 MiB	poppler             	PDF rendering library based on xpdf 3.0
+   6.95 MiB	openssh             	Premier connectivity tool for remote login with the SSH protocol
+   8.13 MiB	pipewire            	Low-latency audio/video router and processor
+   8.41 MiB	rustup              	The Rust toolchain installer
+   9.42 MiB	noto-fonts-emoji    	Google Noto emoji fonts
+   9.48 MiB	pyright             	Type checker for the Python language
+  10.91 MiB	imagemagick         	An image viewing/manipulation program
+  11.34 MiB	fcitx5              	Next generation of fcitx
+  12.87 MiB	ttf-joypixels       	Emoji as a Service (formerly EmojiOne)
+  13.68 MiB	libqalculate        	Multi-purpose desktop calculator
+  14.52 MiB	fish                	Smart and user friendly shell intended mostly for interactive use
+  15.45 MiB	nextcloud-client    	Nextcloud desktop client
+  15.91 MiB	python-pip          	The PyPA recommended tool for installing Python packages
+  23.32 MiB	neovim              	Fork of Vim aiming to improve user experience, plugins, and GUIs
+  31.41 MiB	audacity            	A program that lets you manipulate digital audio waveforms
+  32.97 MiB	grub                	GNU GRand Unified Bootloader (2)
+  34.49 MiB	git                 	the fast distributed version control system
+  35.80 MiB	zathura-pdf-mupdf   	PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)
+  40.73 MiB	capitaine-cursors   	An x-cursor theme inspired by macOS and based on KDE Breeze
+  66.78 MiB	cmake               	A cross-platform open-source make system
+  78.75 MiB	telegram-desktop    	Official Telegram Desktop client
+ 109.70 MiB	noto-fonts          	Google Noto TTF fonts
+ 111.33 MiB	emacs               	The extensible, customizable, self-documenting real-time display editor
+ 162.57 MiB	linux-firmware      	Firmware files for Linux
+ 178.62 MiB	linux               	The Linux kernel and modules
+ 229.98 MiB	librewolf           	Community-maintained fork of Firefox, focused on privacy, security and freedom.
+ 297.80 MiB	noto-fonts-cjk      	Google Noto CJK fonts

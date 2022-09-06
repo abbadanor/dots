@@ -1,0 +1,142 @@
+#
+# wm independent hotkeys
+#
+
+# alacritty
+super + Return
+	alacritty
+
+# rofi (d)run
+super + d
+	rofi -no-lazy-grab -show drun -modi drun -show-icons -theme ~/.config/rofi/styles/app_menu/style.rasi
+
+# rofi run
+super + shift + d
+	rofi -no-lazy-grab -show run -modi run -theme ~/.config/rofi/styles/app_menu/style.rasi
+
+# make sxhkd (u)pdate its configuration files:
+super + u
+	pkill -USR1 -x sxhkd
+
+# lock screen
+super + Escape
+	slock
+
+# (b)rowser
+super + b
+	librewolf
+
+# (e)macs client
+super + e
+	emacsclient -c -a 'emacs'
+
+super + n
+    alacritty -t music -e tmux new-session -s $$ "tmux source-file ~/.config/ncmpcpp/tsession"
+
+# screenshot menu
+super + p
+	~/.config/rofi/styles/screenshot_menu/screenshot.sh
+
+# take fullscreen screenshot
+super + shift + p
+	  maim | tee ~/Pictures/Screenshots/$(date +%s).png | xclip -selection clipboard -t image/png -i
+
+# emoji menu
+super + shift + e
+	  rofi -no-lazy-grab -show emoji -modi emoji -kb-custom-1 Ctrl+C -theme ~/.config/rofi/styles/emoji_menu/style.rasi
+
+#
+# bspwm hotkeys
+#
+
+# (q)uit/(r)estart bspwm
+super + shift + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+super + {_,shift + }w
+	bspc node -{c,k}
+
+# toggle (f)loating window
+super + shift + f
+	bspc node -t ~floating
+
+# toggle (f)ullscreen
+super + f
+	bspc node -t ~fullscreen
+
+# (s)wap the current window with the biggest window
+super + @space
+	bspc node -s biggest.window.local
+
+# focus on the biggest window
+super + g
+	bspc node -f biggest.window.local
+
+# focus the next/previous desktop
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the given desktop
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}' && polybar-msg action bsp_layout hook 0
+
+# send to the given desktop
+super + shift + {1-9,0}
+	bspc node -d '^{1-9,10}'
+
+
+#
+# bsp-layout
+#
+
+# focus next/previous window
+super + {j,k}
+	bspc node -f {next,prev}.local.!hidden.window
+
+# (r)otate layout direction
+super + r
+	~/.config/bspwm/scripts/rotate.sh
+
+# (m)irror layout
+super + m
+	~/.config/bspwm/scripts/mirror.sh
+
+# (t)all layout
+super + t
+	bsp-layout set tall && polybar-msg action bsp_layout hook 0
+
+# (t)iling layout
+super + shift + t
+	bsp-layout set tiling && polybar-msg action bsp_layout hook 0
+
+
+# (o)riginal/tiled layout
+super + o
+	bsp-layout set tiled && polybar-msg action bsp_layout hook 0
+
+# cycle between layouts
+super + {_,shift+}Tab
+	bsp-layout {next,previous} --layouts tall,wide,tiled,monocle,even,grid && polybar-msg action bsp_layout hook 0
+
+# resize window horizontally
+super + {h,l}
+	bspc node -z {left -20 0 || bspc node -z right -20 0, right 20 0 || bspc node -z left 20 0}
+
+# resize window vertically
+super + shift + {j,k}
+	bspc node -z {bottom 0 20 || bspc node -z top 0 20, top 0 -20 || bspc node -z bottom 0 -20}
+
+#
+# system keybinds
+#
+
+# XF86Audio{Lower,Raise}Volume
+# 	pamixer -{d,i} 5
+
+XF86Audio{Lower,Raise}Volume
+	dunstify hej
+
+
+XF86AudioMute
+	pamixer -t

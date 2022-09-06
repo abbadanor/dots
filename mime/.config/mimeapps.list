@@ -1,0 +1,12 @@
+[Default Applications]
+x-scheme-handler/tg=userapp-Telegram Desktop-E23DR1.desktop
+text/x-shellscript=emacsclient.desktop;
+text/plain=emacsclient.desktop;
+x-scheme-handler/magnet=org.qbittorrent.qBittorrent.desktop;
+application/x-bittorrent=org.qbittorrent.qBittorrent.desktop;
+application/postscript=org.pwmt.zathura-pdf-mupdf.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+image/png=sxiv.desktop;
+image/jpeg=sxiv.desktop;
+image/gif=sxiv.desktop;
+video/x-matroska=mpv.desktop
