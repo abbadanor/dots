@@ -33,10 +33,6 @@ redshift -l 59.56639:15.87218 &
 feh --bg-fill --randomize ~/Pictures/Wallpapers/*
 xdg-user-dirs-update
 
-pgrep pipewire || pipewire &
-pgrep pipewire-pulse || pipewire-pulse &
-pgrep wireplumber || wireplumber &
-
 pkill polybar
 polybar -c "$HOME/.config/polybar/config.ini" main &
 
