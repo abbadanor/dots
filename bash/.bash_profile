@@ -6,6 +6,7 @@ export EDITOR="emacsclient -t -a ''"
 export BROWSER="librewolf"
 export TERMINAL="alacritty"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export LSP_USE_PLISTS=true
 
 export GTK_IM_MODULE="fcitx"
 export QT_IM_MODULE="fcitx"

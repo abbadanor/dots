@@ -45,6 +45,10 @@ super + shift + p
 super + shift + e
 	  rofi -no-lazy-grab -show emoji -modi emoji -kb-custom-1 Ctrl+C -theme ~/.config/rofi/styles/emoji_menu/style.rasi
 
+# randomize wallpaper
+super + shift + r
+	  feh --bg-fill --randomize ~/Pictures/Wallpapers/*
+
 #
 # bspwm hotkeys
 #
