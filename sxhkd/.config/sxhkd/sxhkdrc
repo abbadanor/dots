@@ -135,8 +135,7 @@ super + shift + {j,k}
 # 	pamixer -{d,i} 5
 
 XF86Audio{Lower,Raise}Volume
-	dunstify hej
-
+	pamixer -{d,i} 5
 
 XF86AudioMute
 	pamixer -t

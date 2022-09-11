@@ -55,45 +55,55 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Documents/org")
 
-;; Map <SPC - /> to comment. TODO: make to toggle comment on row in normal mode
-(map! :leader "/" 'evilnc-comment-operator)
-
-;; Use full ranger instead of deer-mode
-(setq ranger-override-dired 'ranger)
-
 ;; Save recent file list every five minutes
 (run-at-time nil (* 5 60) 'recentf-save-list)
 
-(defun move-mpc-down ()
-  (interactive)
-  (evil-next-visual-line)
-  (mpc-select)
- )
-(defun move-mpc-up ()
-  (interactive)
-  (evil-previous-visual-line)
-  (mpc-select)
- )
+(map! :leader
+      :desc "Org babel tangle" "m B" #'org-babel-tangle)
+(after! org
+  (setq org-directory "~/Documents/org/"
+        org-agenda-files '("~/nc/Org/agenda.org")
+        org-default-notes-file (expand-file-name "notes.org" org-directory)
+        org-ellipsis " ▼ "
+        org-superstar-headline-bullets-list '("◉" "●" "○" "◆" "●" "○" "◆")
+        org-superstar-itembullet-alist '((?+ . ?➤) (?- . ?✦)) ; changes +/- symbols in item lists
+        org-log-done 'time
+        org-hide-emphasis-markers t
+        ;; ex. of org-link-abbrev-alist in action
+        ;; [[arch-wiki:Name_of_Page][Description]]
+        org-link-abbrev-alist    ; This overwrites the default Doom org-link-abbrev-list
+          '(("google" . "http://www.google.com/search?q=")
+            ("arch-wiki" . "https://wiki.archlinux.org/index.php/")
+            ("ddg" . "https://duckduckgo.com/?q=")
+            ("wiki" . "https://en.wikipedia.org/wiki/"))
+        org-table-convert-region-max-lines 20000
+        org-todo-keywords        ; This overwrites the default Doom org-todo-keywords
+          '((sequence
+             "TODO(t)"           ; A task that is ready to be tackled
+             "WAIT(w)"           ; Something is holding up this task
+             "|"                 ; The pipe necessary to separate "active" states and "inactive" states
+             "DONE(d)"           ; Task has been completed
+             "CANCELLED(c)" )))) ; Task has been cancelled
 
-(general-define-key
- :keymaps 'mpc-mode-map
- :states 'normal
- "j" 'move-mpc-down
- "k" 'move-mpc-up
- "t" 'mpc-toggle-play
- "r" 'mpc-toggle-repeat
- "s" 'mpc-toggle-shuffle
- "S" 'mpc-toggle-shuffle
- "c" 'mpc-toggle-consume
- "a" 'mpc-playlist-add
- "p" 'mpc-playlist
- ">" 'mpc-next
- "<" 'mpc-prev
- "R" 'mpc-playlist-delete
- "q" 'mpc-quit
- "RET" 'mpc-select
- "x" 'mpc-play-at-point
- )
+(defun dt/org-colors-doom-one ()
+  "Enable Doom One colors for Org headers."
+  (interactive)
+  (dolist
+      (face
+       '((org-level-1 1.7 "#51afef" ultra-bold)
+         (org-level-2 1.6 "#c678dd" extra-bold)
+         (org-level-3 1.5 "#98be65" bold)
+         (org-level-4 1.4 "#da8548" semi-bold)
+         (org-level-5 1.3 "#5699af" normal)
+         (org-level-6 1.2 "#a9a1e1" normal)
+         (org-level-7 1.1 "#46d9ff" normal)
+         (org-level-8 1.0 "#ff6c6b" normal)))
+    (set-face-attribute (nth 0 face) nil :font doom-variable-pitch-font :weight (nth 3 face) :height (nth 1 face) :foreground (nth 2 face)))
+    (set-face-attribute 'org-table nil :font doom-font :weight 'normal :height 1.0 :foreground "#bfafdf"))
+
+(with-eval-after-load 'org-faces
+  (dt/org-colors-doom-one
+))
 
 ;; (setq emms-browser-covers 'emms-browser-cache-thumbnail-async)
 

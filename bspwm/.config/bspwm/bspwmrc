@@ -28,16 +28,13 @@ bsp-layout set tiled 7
 bsp-layout set tiled 8
 bsp-layout set tiled 9
 
+pipewire &
+
 redshift -l 59.56639:15.87218 &
 
-feh --bg-fill --randomize ~/Pictures/Wallpapers/*
+feh --no-fehbg --bg-fill "$HOME/Downloads/iceland.png"
 xdg-user-dirs-update
 
-pgrep pipewire || pipewire &
-pgrep pipewire-pulse || pipewire-pulse &
-pgrep wireplumber || wireplumber &
-
-pkill polybar
 polybar -c "$HOME/.config/polybar/config.ini" main &
 
 picom --experimental-backends --config "$HOME/.config/picom/picom.conf" &
@@ -45,5 +42,4 @@ mpd &
 /usr/bin/emacs --daemon &
 nextcloud --background &
 
-pkill sxhkd
 sxhkd &

@@ -11,6 +11,8 @@ export GTK_IM_MODULE="fcitx"
 export QT_IM_MODULE="fcitx"
 export XMODIFIERS="@im=fcitx"
 
+export WINIT_HIDPI_FACTOR="1"
+
 # This is the list for lf icons:
 export LF_ICONS="\
 tw=:\

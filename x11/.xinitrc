@@ -6,6 +6,7 @@ xrdb -merge ~/.config/one-dark
 ln -sf /home/adam/.config/xkb/sv /usr/share/X11/xkb/symbols/
 setxkbmap sv
 
+lxsession &
 pipewire &
 pipewire-pulse &
 wireplumber &
