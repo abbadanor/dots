@@ -35,7 +35,6 @@ redshift -l 59.56639:15.87218 &
 feh --no-fehbg --bg-fill "$HOME/Downloads/iceland.png"
 xdg-user-dirs-update
 
-
 picom --experimental-backends --config "$HOME/.config/picom/picom.conf" &
 mpd &
 /usr/bin/emacs --daemon &
